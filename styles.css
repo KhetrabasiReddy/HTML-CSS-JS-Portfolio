@@ -1,7 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: "Blinker", sans-serif;
+
+    transition: all 0.3s;
+}
+
+
+body[theme="theme-1"]{
+    
+    .primary-section{
+        background-color: #18bc9c;
+        color:white;
+    }
+    .secondary-section{
+        background-color:#2c3e50;
+        color:white;
+    }
+   
+}
+body[theme="theme-1"] a:hover{
+    color:#18bc9c;
+}
+body[theme="theme-2"]{
+    
+    .primary-section{
+        background-color: rgba(102, 99, 99, 0.712);
+        color:white;
+    }
+    .secondary-section{
+        background-color:rgba(157, 245, 25, 0.932);
+        color:black;
+    }
+}
+body[theme="theme-2"] a:hover{
+    color:white;
+}
+.txt-dec-none{
+    text-decoration:none;
+    color:inherit;
+    font-weight:600;
+}
+nav{
+    display:flex;
+    justify-content: space-evenly;
+    padding:1rem;
+    width:100vw;
+    gap:1rem;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    
+    font-size:2rem;
+    gap:1rem;
+}
+
+
+@media screen and (max-width:768px) {
+    nav{
+        flex-direction: column;
+        align-items:center;
+    }    
 }
